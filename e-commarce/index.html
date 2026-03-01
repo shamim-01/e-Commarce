@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleShop | E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header/Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="logo-text">Style<span>Shop</span></a>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#deals" class="nav-link">Deals</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <a href="#" class="icon-link" id="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" class="icon-link" id="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">3</span>
+        </a>
+        <a href="#" class="icon-link" id="user-btn">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search products...">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be loaded here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-price">$0.00</span>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title animate-text">Summer Collection 2026</h1>
+        <p class="hero-subtitle">Experience premium quality, modern styles, and timeless elegance crafted for every
+          occasion.
+          Shop confidently with curated collections that blend comfort, creativity, and contemporary fashion..</p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Fashion Model">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products" id="products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Check out our most popular items this season</p>
+
+      <div class="product-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="products-grid">
+        <!-- Products will be loaded by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section class="deals" id="deals">
+    <div class="container">
+      <h2 class="section-title">Today's Deals</h2>
+      <p class="section-subtitle">Limited time offers - Don't miss out!</p>
+
+      <div class="deals-container">
+        <div class="deal-card">
+          <div class="deal-image">
+            <img src="images/Sneakrs1.jpg" alt="Sneakers">
+            <div class="deal-badge">40% OFF</div>
+          </div>
+          <div class="deal-content">
+            <h3>Premium Sneakers</h3>
+            <p class="deal-price">
+              <span class="original-price">$120</span>
+              <span class="discounted-price">$72</span>
+            </p>
+            <div class="deal-timer">
+              <p>Offer ends in:</p>
+              <div class="timer">
+                <div class="timer-item">
+                  <span class="timer-number" id="hours">12</span>
+                  <span class="timer-label">Hours</span>
+                </div>
+                <div class="timer-item">
+                  <span class="timer-number" id="minutes">45</span>
+                  <span class="timer-label">Minutes</span>
+                </div>
+                <div class="timer-item">
+                  <span class="timer-number" id="seconds">30</span>
+                  <span class="timer-label">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="deal-info">
+          <h3>Flash Sale!</h3>
+          <p>Hurry up! This exclusive offer ends soon. Get your favorite products at unbelievable prices.</p>
+          <a href="#" class="btn btn-secondary">View All Deals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image">
+        <img src="images/store.jpg" alt="Store Interior">
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">About StyleShop</h2>
+        <p>We are a premium fashion retailer offering the latest trends in clothing, accessories, and footwear. Our
+          mission is to provide high-quality products with exceptional customer service.</p>
+        <p>With over 10 years in the fashion industry, we've built a reputation for style, quality, and reliability. Our
+          team carefully curates each collection to ensure we offer the best products to our customers.</p>
+        <div class="stats">
+          <div class="stat-item">
+            <h3>10,000+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Products</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Brands</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Style <span style="color:aqua">Shop</span></h3>
+          <p>Your one-stop shop for the latest fashion trends and accessories. Quality and style guaranteed.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick <span style="color:aqua">Links</span></h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer <span style="color:aqua">Service</span></h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact <span style="color:aqua">Info</span></h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Bangladesh</li>
+            <li><i class="fas fa-phone"></i>01580-856004</li>
+            <li><i class="fas fa-envelope"></i> shamimalam5067@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shamim Alam. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
