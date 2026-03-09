@@ -7,7 +7,6 @@ This project demonstrates a basic online store interface where users can browse 
 https://shamim-01.github.io/e-Commarce/
 
 ---
-
 ## 🚀 Features
 
 - Responsive design
@@ -29,3 +28,9 @@ https://shamim-01.github.io/e-Commarce/
 ---
 
 ## 📂 Project Structure
+e-Commarce
+│
+├── docs
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
