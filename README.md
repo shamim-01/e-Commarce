@@ -30,7 +30,7 @@ https://shamim-01.github.io/e-Commarce/
 ## 📂 Project Structure
 e-Commarce
 │
-├── docs
-│  index.html
-│ style.css
-│ script.js
+docs
+ ->index.html
+  ->style.css
+-> script.js
