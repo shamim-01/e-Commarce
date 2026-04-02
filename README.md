@@ -31,6 +31,6 @@ https://shamim-01.github.io/e-Commarce/
 e-Commarce
 📂 docs
 |
- index.html
- style.css
- script.js
+ - index.html
+ - style.css
+ - script.js
